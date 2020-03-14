@@ -4,13 +4,49 @@
 //--------------------------------------
 console.log('Estructuras de control');
 console.log('Estructuras de control condicionales');
-// if ... else
-
-
 // if ... else if ... else
+enum Continente {
+    Americano = 1,
+    Europa,
+    Africa,
+    Oceania,
+}
+
+let unContinente: Continente = 5;
+
+if (unContinente == Continente.Americano) {
+    console.log(`El continente es: Americano`)
+} else if (unContinente == Continente.Africa) {
+    console.log(`El continente es: Africa`)
+} else if (unContinente == Continente.Europa) {
+    console.log(`El continente es: Europa`)
+} else if (unContinente == Continente.Oceania) {
+    console.log(`El continente es: Oceania`)
+} else {
+    console.log(`El continente no está`)
+}
 
 
 // switch 
+
+switch (unContinente) {
+    case Continente.Americano: {
+        console.log(`El continente es: Americano;`);
+        break;
+    } case Continente.Africa: {
+        console.log(`El continente es: Africa`);
+        break;
+    } case Continente.Europa: {
+        console.log(`El continente es: Europa`);
+        break;
+    } case Continente.Oceania: {
+        console.log(`El continente es: Oceania`);
+        break;
+    } default: {
+        console.log(`El continente no está`);
+        break;
+    }
+}
 
 
 console.log('------------------------------------');
@@ -34,7 +70,7 @@ for (let j: number = 0; j < cuentas.length; j++) {
 }
 console.log(suma);
 
-//--------
+//-----------
 
 class Vehiculo {
     id: number;
