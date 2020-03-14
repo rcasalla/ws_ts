@@ -60,17 +60,19 @@ class Vehiculo {
 }
 
 let vehiculos: Array<Vehiculo> = [new Vehiculo(1, 'Dodge', 'Grand Caravan', 1994, 'WBABN53452P672584'),
-new Vehiculo(2,'Buick','Coachbuilder',1995,'WAUWFAFR9AA954095'),
-new Vehiculo(3,'Volvo','XC70',2008,'WAUHGAFC0CN058717'),
-new Vehiculo(4,'Audi','S4',2005,'1G4HR54K424671728'),
-new Vehiculo(5,'Mitsubishi','Montero Sport',2002,'5TFCW5F1XBX047846'),
-new Vehiculo(6,'Honda','Accord',2010,'WBALZ5C54CC332269'),
-new Vehiculo(7,'Toyota','Prius',2009,'WVWAA7AJ3CW803789'),
-new Vehiculo(8,'Saab','9-3',2003,'YV4612HM9F1029474'),
-new Vehiculo(9,'Jaguar','X-Type',2002,'WBANW5C50AC270660'),
-new Vehiculo(10,'Volkswagen','Passat',1986,'WBA3A5C5XDJ866431')];
+new Vehiculo(2, 'Buick', 'Coachbuilder', 1995, 'WAUWFAFR9AA954095'),
+new Vehiculo(3, 'Volvo', 'XC70', 2008, 'WAUHGAFC0CN058717'),
+new Vehiculo(4, 'Audi', 'S4', 2005, '1G4HR54K424671728'),
+new Vehiculo(5, 'Mitsubishi', 'Montero Sport', 2002, '5TFCW5F1XBX047846'),
+new Vehiculo(6, 'Honda', 'Accord', 2010, 'WBALZ5C54CC332269'),
+new Vehiculo(7, 'Toyota', 'Prius', 2009, 'WVWAA7AJ3CW803789'),
+new Vehiculo(8, 'Saab', '9-3', 2003, 'YV4612HM9F1029474'),
+new Vehiculo(9, 'Jaguar', 'X-Type', 2002, 'WBANW5C50AC270660'),
+new Vehiculo(10, 'Volkswagen', 'Passat', 1986, 'WBA3A5C5XDJ866431')];
 
-for (let i:number = 0; i< vehiculos.length;i++){
+console.log(`Total vehículos: ${vehiculos.length}`);
+
+for (let i: number = 0; i < vehiculos.length; i++) {
     console.log(vehiculos[i].desplegar());
 }
 
